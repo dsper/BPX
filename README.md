@@ -10,7 +10,7 @@ PBX-static
 4. npm install node-sass
 5. Go to `Package.json` and add
 `"scripts": {
-    "scss": "node-sass --watch scss -o css"
+    "scss": "node-sass -r --watch scss -o css"
   }`
 6. npm run scss
 
