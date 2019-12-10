@@ -1,6 +1,10 @@
-//add all custom sass code here
+//custom SASS goes here above the import
+//Run `npm run scss` to compile (must have ran ` npm install node-sass` first) 
 
+@import "../scss/fonts";
+@import "../scss/variables";
+@import "../scss/custom";
+
+
+//import bootstrap library
 @import "node_modules/bootstrap/scss/bootstrap";
-
-
-
