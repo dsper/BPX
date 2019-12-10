@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local("Roboto Mono"),
+      local("RobotoMono-Regular"),
+      url(~typeface-roboto-mono/files/roboto-mono-latin-400.woff2) format("woff2"),
+      url(~typeface-roboto-mono/files/roboto-mono-latin-400.woff) format("woff");
+  }
+  
+  @font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    src:
+      local("Roboto Mono Medium"),
+      local("RobotoMono-Medium"),
+      url(~typeface-roboto-mono/files/roboto-mono-latin-500.woff2) format("woff2"),
+      url(~typeface-roboto-mono/files/roboto-mono-latin-500.woff) format("woff");
+  }
+  
+
+  @font-face {
+    font-family: 'Source Sans Pro Regular';
+    src: url(../font/SourceSansPro-Regular.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url(../font/SourceSansPro-Bold.otf) format('otf');
+    font-weight: Bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../font/SourceSansPro-Semibold.otf) format('otf');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
