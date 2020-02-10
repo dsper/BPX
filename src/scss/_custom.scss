@@ -3,12 +3,6 @@ h1 {
     font-family: var(--booz-source-sans);
 }
 
-.title h1 {
-    font-family: var(--booz-source-sans);
-    font-size: 40px;
-    font-weight: 600;
-    display: inline;
-}
 
 .head {
     display: block;
@@ -16,8 +10,15 @@ h1 {
 
     nav {
         float: right;
-        // top: 1rem;
     }
+}
+
+
+.title h1 {
+    font-family: var(--booz-source-sans);
+    font-size: 40px;
+    font-weight: 600;
+    display: inline;
 }
 
 .BAP {
@@ -27,6 +28,21 @@ h1 {
 .rotator {
     color: #005057;
 }
+
+h1 {
+    &.network,
+    &.connections,
+    &.marketplace,
+    &.relationships,
+    &.ventures,
+    &.opportunities,
+    &.solutions,
+    &.alliances,
+    &.ecosystem {
+        display: none;
+    }
+}
+
 
 .nav-home,
 .nav-about,
@@ -46,25 +62,35 @@ h1 {
     text-align: center;
 }
 
-.jumbotron {
-    border: solid 1px #005058;
-    background-color: #066a73 !important;
-    color: white;
-    text-align: center;
 
-    //   background-image: ;
-}
+.portal {
+    i {
+        display: block;
+        font-size: 80px;
+        margin: 10% 0;
+    }
 
-div.portal {
-    border: solid 1px white;
-    border-radius: 5px;
-}
-
-.portal h3 {
-    margin: 0.5rem 0;
+    h3 {
+        margin: 10% 0;
+    }   
 }
 
 div {
+    &.jumbotron {
+        border: solid #066a73;
+        border-width: 2rem 0;
+        background-image: url("/Users/josephmeehan/Documents/GitHub/BPX/images/woman-blue-jacket-crop.jpeg");
+        background-color: #066a73;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        color: white;
+        text-align: center;
+    }
+    &.portal {
+        border: solid 1px white;
+        border-radius: 5px;
+    }
+
     &.partner {
         background-color: #005057;
         margin-bottom: 1rem;
@@ -74,6 +100,11 @@ div {
         background-color: #1d818c;
         margin-top: 1rem;
     }
+
+    // &.datalinks{
+    //     margin: 0 0 0 0;
+    //     display: block;
+    // }
 
     &.datalinks-left,
     &.datalinks-middle,
