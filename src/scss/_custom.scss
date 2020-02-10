@@ -1,124 +1,138 @@
-h2, h1 {
+h2,
+h1 {
     font-family: var(--booz-source-sans);
-  }
-  
-  .title {
+}
+
+.title {
     font-family: var(--booz-source-sans);
     font-size: 24px;
     font-weight: 600;
     display: inline;
-  }
-  
-  .head {
-      display: inline-block;
+}
+
+.head {
+    display: inline-block;
+
     nav {
         position: absolute;
         right: 1.5rem;
         top: 1rem;
-  }
+    }
+}
 
-  #BAP {
+#BAP {
     color: black;
-  }
-  
-  #Xchange {
+}
+
+#Xchange {
     color: #005057;
-  }
-  
-  .nav-home, .nav-about, .nav-activity, .nav-faq, .nav-contact {
+}
+
+.nav-home,
+.nav-about,
+.nav-activity,
+.nav-faq,
+.nav-contact {
     font-weight: 500;
     color: #2c4357;
-  }
-  
-  .portal h3 {
+}
+
+.portal h3 {
     font-size: 16px;
-  }
-  
-  .datalinks h1, .FAQ h1 {
+}
+
+.datalinks h1,
+.FAQ h1 {
     text-align: center;
-  }
-  
-  .jumbotron {
+}
+
+.jumbotron {
     border: solid 1px #005058;
     background-color: #066a73 !important;
     color: white;
     text-align: center;
-  
+
     //   background-image: ;
-  }
-  
-  div.portal {
+}
+
+div.portal {
     border: solid 1px white;
     border-radius: 5px;
-  }
-  
-  .portal h3 {
+}
+
+.portal h3 {
     margin: 0.5rem 0;
-  }
-  
-  div {
+}
+
+div {
     &.partner {
-      background-color: #005057;
-      margin-bottom: 1rem;
-    }
-  
-    &.employee {
-      background-color: #1d818c;
-      margin-top: 1rem;
+        background-color: #005057;
+        margin-bottom: 1rem;
     }
 
-    &.datalinks-left, &.datalinks-middle, &.datalinks-right {
-      border-bottom: 1rem solid;
-      border-left: 1rem solid transparent;
-      border-right: 1rem solid transparent;
-      height: 0;
+    &.employee {
+        background-color: #1d818c;
+        margin-top: 1rem;
+    }
+
+    &.datalinks-left,
+    &.datalinks-middle,
+    &.datalinks-right {
+        border-bottom: 1rem solid;
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+        height: 0;
     }
 
     &.datalinks-left {
         border-bottom-color: #046870;
     }
+
     &.datalinks-middle {
         border-bottom-color: #0a8b95;
     }
+
     &.datalinks-right {
         border-bottom-color: #27aebd;
     }
-  }
-  
-  .login-button a {
+}
+
+.login-button a {
     border: solid 1px white;
     border-radius: 5px;
     display: block;
     text-align: left;
     background-color: white;
     color: black;
-  }
-  
-  .login-arrow-right {
+}
+
+.login-arrow-right {
     position: absolute;
     right: 1.5rem;
-  }
-  
-  .datalinks-body {
+}
+
+.datalinks-body {
     color: white;
     text-align: center;
-  }
-  
-  .datalink-experts, .datalink-opportunities, .datalink-partners {
+}
+
+.datalink-experts,
+.datalink-opportunities,
+.datalink-partners {
     border-bottom: 2rem solid;
-  }
-  
-  .datalink-experts {
+}
+
+.datalink-experts {
     background-color: #005057;
     border-bottom-color: #003f44;
-  }
-  
-  .datalink-opportunities {
+}
+
+.datalink-opportunities {
     background-color: #046870;
     border-bottom-color: #035359;
-  }
-  
-  .datalink-partners {
+}
+
+.datalink-partners {
     background-color: #1d818c;
     border-bottom-color: #166770;
-  }
+}

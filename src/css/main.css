@@ -69,7 +69,8 @@
   --monospace-font-weight-bold: 500;
   --booz-source-sans: "Source Sans Pro"; }
 
-h2, h1 {
+h2,
+h1 {
   font-family: var(--booz-source-sans); }
 
 .title {
@@ -80,11 +81,10 @@ h2, h1 {
 
 .head {
   display: inline-block; }
-
-.head nav {
-  position: absolute;
-  right: 1.5rem;
-  top: 1rem; }
+  .head nav {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem; }
 
 #BAP {
   color: black; }
@@ -92,14 +92,19 @@ h2, h1 {
 #Xchange {
   color: #005057; }
 
-.nav-home, .nav-about, .nav-activity, .nav-faq, .nav-contact {
+.nav-home,
+.nav-about,
+.nav-activity,
+.nav-faq,
+.nav-contact {
   font-weight: 500;
   color: #2c4357; }
 
 .portal h3 {
   font-size: 16px; }
 
-.datalinks h1, .FAQ h1 {
+.datalinks h1,
+.FAQ h1 {
   text-align: center; }
 
 .jumbotron {
@@ -154,7 +159,9 @@ div.datalinks-right {
   color: white;
   text-align: center; }
 
-.datalink-experts, .datalink-opportunities, .datalink-partners {
+.datalink-experts,
+.datalink-opportunities,
+.datalink-partners {
   border-bottom: 2rem solid; }
 
 .datalink-experts {
