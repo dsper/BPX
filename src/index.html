@@ -26,7 +26,7 @@
 <body>
 
   <!-- Page Head -->
-  <div class="container head">
+  <div class="container head" id="home">
     <span class="title">
       <h1 class="BAP" id="BAP">Booz Allen Partner</h1> 
       <h1 class="rotator xchange" id="rotatingtitle">Xchange</h1>
@@ -42,11 +42,11 @@
     </span>
     
     <nav class="navbar">
-      <a class="nav-home" href="#">Home</a> <span>&nbsp;|&nbsp;</span>
-      <a class="nav-about" href="#">About</a> <span>&nbsp;|&nbsp;</span>
-      <a class="nav-activity" href="#">Activity</a> <span>&nbsp;|&nbsp;</span>
+      <a class="nav-home" href="#home">Home</a> <span>&nbsp;|&nbsp;</span>
+      <a class="nav-about" href="#about">About</a> <span>&nbsp;|&nbsp;</span>
+      <a class="nav-activity" href="#activity">Activity</a> <span>&nbsp;|&nbsp;</span>
       <a class="nav-faq" href="#FAQ">FAQ</a> <span>&nbsp;|&nbsp;</span>
-      <a class="nav-contact" href="#">Contact</a>
+      <a class="nav-contact" href="#contact">Contact</a>
     </nav>
     <!-- <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" id="nav-title" href="#">Booz Allen Partner Xchange</a>
@@ -74,7 +74,7 @@
             <div class="col-md-6">
               <h3>Partner Portal</h3>
               <p class="login-button">
-                <a class="btn btn-default" href="#" role="button">Login <span class="login-arrow-right">→</span></a>
+                <a class="btn btn-default" href="#" role="button" onclick="openForm()">Login <span class="login-arrow-right">→</span></a>
               </p>
             </div>
           </div>
@@ -87,20 +87,30 @@
             <div class="col-md-6">
               <h3>Employee Portal</h3>
               <p class="login-button">
-                <a class="btn btn-default" href="#" role="button">Login <span class="login-arrow-right">→</span></a>
+                <a class="btn btn-default" href="#" role="button" onclick="openForm()">Login <span class="login-arrow-right">→</span></a>
               </p>
             </div>
           </div>
         </div>
       </div>
-
+      <div class="form-popup" id="loginForm">
+        <form action="https://bpn.ratio.exchange/process.cfm" method="post" class="form-container">
+          <table>
+           <tr><td>Email</td></tr>
+           <tr><td><input type="email" name="em"></td></tr>
+           <tr><td>Password</td></tr>
+           <tr><td><input type="password" name="pw"></td></tr>
+           <tr><td><input type="submit" name="button" required value="Sign In" onclick="closeForm()"></td></tr>
+          </table>
+        </form>
+      </div>
 
       <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
     </div>
   </div>
 
   <!-- Page Description -->
-  <div class="container" id="page-description">
+  <div class="container" id="about">
     <p>The Booz Allen Partner Exchange (BPX) is a partnership ecosystem management and exchange tool. The BPX will
     foster and strengthen Partner relationships; and it will serve as a connection point between Booz Allen
     employees and Partners to collaborate, accelerate, and scale technology capabilities and solutions in the
@@ -108,7 +118,7 @@
   </div>
 
   <!-- Datalinks -->
-  <div class="container datalinks">
+  <div class="container datalinks" id="activity">
     <h1>We do more. Together.</h1>
     <div class="row datalinks-top">
       <div class="col-md-4 datalinks-left"></div>
@@ -117,12 +127,12 @@
     </div>
     <div class="row datalinks-body">
       <div class="col-md-4 datalink-experts">
-        <h2>Graph_Icon 7,962</h2>
+        <h2><i class="fas fa-chart-line"></i> 7,962</h2>
         <h3>Experts</h3>
         <p>with extensive knowledge and diverse expertise</p>
       </div>
       <div class="col-md-4 datalink-opportunities">
-        <h2>Bulb_Icon 6,443</h2>
+        <h2><i class="far fa-lightbulb"></i> 6,443</h2>
         <h3>Opportunities</h3>
         <p>to grow and expand your business</p>
       </div>
@@ -195,8 +205,15 @@
 
   <hr>
 
-  <footer>
-    <span>Booz Allen Partner Xchange</span>
+  <footer id="contact">
+    <h1>Booz Allen Partner Xchange</h1>
+    <nav class="navbar">
+      <a class="nav-home" href="#home">Home</a> <span>&nbsp;|&nbsp;</span>
+      <a class="nav-about" href="#about">About</a> <span>&nbsp;|&nbsp;</span>
+      <a class="nav-activity" href="#activity">Activity</a> <span>&nbsp;|&nbsp;</span>
+      <a class="nav-faq" href="#FAQ">FAQ</a> <span>&nbsp;|&nbsp;</span>
+      <a class="nav-contact" href="#contact">Contact</a>
+    </nav>
     <p>&copy; Booz Allen Hamilton 2020</p>
   </footer>
 

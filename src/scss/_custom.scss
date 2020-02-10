@@ -3,6 +3,12 @@ h1 {
     font-family: var(--booz-source-sans);
 }
 
+/******** 
+
+HEADING
+
+********/
+
 
 .head {
     display: block;
@@ -29,19 +35,19 @@ h1 {
     color: #005057;
 }
 
-h1 {
-    &.network,
-    &.connections,
-    &.marketplace,
-    &.relationships,
-    &.ventures,
-    &.opportunities,
-    &.solutions,
-    &.alliances,
-    &.ecosystem {
-        display: none;
-    }
-}
+// h1 {
+//     &.network,
+//     &.connections,
+//     &.marketplace,
+//     &.relationships,
+//     &.ventures,
+//     &.opportunities,
+//     &.solutions,
+//     &.alliances,
+//     &.ecosystem {
+//         display: none;
+//     }
+// }
 
 
 .nav-home,
@@ -52,6 +58,12 @@ h1 {
     font-weight: 500;
     color: #2c4357;
 }
+
+/******** 
+
+JUMBOTRON
+
+********/
 
 .portal h3 {
     font-size: 16px;
@@ -72,7 +84,7 @@ h1 {
 
     h3 {
         margin: 10% 0;
-    }   
+    }
 }
 
 div {
@@ -86,6 +98,7 @@ div {
         color: white;
         text-align: center;
     }
+
     &.portal {
         border: solid 1px white;
         border-radius: 5px;
@@ -138,13 +151,49 @@ div {
 }
 
 .login-arrow-right {
-    position: absolute;
-    right: 1.5rem;
+    float: right;
+    font-size: large;
 }
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: #066a73;
+}
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/******** 
+
+DATALINKS
+
+********/
 
 .datalinks-body {
     color: white;
     text-align: center;
+
+    h2 {
+        font-size: 40px;
+    }
 }
 
 .datalink-experts,
@@ -167,6 +216,12 @@ div {
     background-color: #1d818c;
     border-bottom-color: #166770;
 }
+
+/******** 
+
+FAQ
+
+********/
 
 .question {
 
@@ -195,4 +250,13 @@ div.answer {
 
 p.qlist {
     margin: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+
+    nav {
+        float: right;
+    }
 }
