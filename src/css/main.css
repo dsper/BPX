@@ -69,10 +69,7 @@
   --monospace-font-weight-bold: 500;
   --booz-source-sans: "Source Sans Pro"; }
 
-h2 {
-  font-family: var(--booz-source-sans); }
-
-h1 {
+h2, h1 {
   font-family: var(--booz-source-sans); }
 
 .title {
@@ -81,40 +78,41 @@ h1 {
   font-weight: 600;
   display: inline; }
 
+.head {
+  display: inline-block; }
+
+.head nav {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem; }
+
 #BAP {
   color: black; }
 
 #Xchange {
   color: #005057; }
 
-.navbar {
-  display: inline; }
-
-.nav-home,
-.nav-about,
-.nav-activity,
-.nav-faq,
-.nav-contact {
+.nav-home, .nav-about, .nav-activity, .nav-faq, .nav-contact {
   font-weight: 500;
   color: #2c4357; }
 
 .portal h3 {
   font-size: 16px; }
 
-.datalinks h1,
-.FAQ h1 {
+.datalinks h1, .FAQ h1 {
   text-align: center; }
 
 .jumbotron {
   border: solid 1px #005058;
-  background-color: #066a73 !important; }
+  background-color: #066a73 !important;
+  color: white;
+  text-align: center; }
 
 div.portal {
   border: solid 1px white;
   border-radius: 5px; }
 
 .portal h3 {
-  color: white;
   margin: 0.5rem 0; }
 
 div.partner {
@@ -124,6 +122,21 @@ div.partner {
 div.employee {
   background-color: #1d818c;
   margin-top: 1rem; }
+
+div.datalinks-left, div.datalinks-middle, div.datalinks-right {
+  border-bottom: 1rem solid;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  height: 0; }
+
+div.datalinks-left {
+  border-bottom-color: #046870; }
+
+div.datalinks-middle {
+  border-bottom-color: #0a8b95; }
+
+div.datalinks-right {
+  border-bottom-color: #27aebd; }
 
 .login-button a {
   border: solid 1px white;
@@ -136,6 +149,25 @@ div.employee {
 .login-arrow-right {
   position: absolute;
   right: 1.5rem; }
+
+.datalinks-body {
+  color: white;
+  text-align: center; }
+
+.datalink-experts, .datalink-opportunities, .datalink-partners {
+  border-bottom: 2rem solid; }
+
+.datalink-experts {
+  background-color: #005057;
+  border-bottom-color: #003f44; }
+
+.datalink-opportunities {
+  background-color: #046870;
+  border-bottom-color: #035359; }
+
+.datalink-partners {
+  background-color: #1d818c;
+  border-bottom-color: #166770; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
