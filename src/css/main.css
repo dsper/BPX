@@ -107,7 +107,35 @@ h1 {
 
 .jumbotron {
   border: solid 1px #005058;
-  background-color: #066a73; }
+  background-color: #066a73 !important; }
+
+div.portal {
+  border: solid 1px white;
+  border-radius: 5px; }
+
+.portal h3 {
+  color: white;
+  margin: 0.5rem 0; }
+
+div.partner {
+  background-color: #005057;
+  margin-bottom: 1rem; }
+
+div.employee {
+  background-color: #1d818c;
+  margin-top: 1rem; }
+
+.login-button a {
+  border: solid 1px white;
+  border-radius: 5px;
+  display: block;
+  text-align: left;
+  background-color: white;
+  color: black; }
+
+.login-arrow-right {
+  position: absolute;
+  right: 1.5rem; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
