@@ -75,10 +75,39 @@ h2 {
 h1 {
   font-family: var(--booz-source-sans); }
 
-#nav-title {
-  color: blue;
-  font-size: 3em;
-  font-weight: 600; }
+.title {
+  font-family: var(--booz-source-sans);
+  font-size: 24px;
+  font-weight: 600;
+  display: inline; }
+
+#BAP {
+  color: black; }
+
+#Xchange {
+  color: #005057; }
+
+.navbar {
+  display: inline; }
+
+.nav-home,
+.nav-about,
+.nav-activity,
+.nav-faq,
+.nav-contact {
+  font-weight: 500;
+  color: #2c4357; }
+
+.portal h3 {
+  font-size: 16px; }
+
+.datalinks h1,
+.FAQ h1 {
+  text-align: center; }
+
+.jumbotron {
+  border: solid 1px #005058;
+  background-color: #066a73; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
