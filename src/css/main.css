@@ -73,23 +73,24 @@ h2,
 h1 {
   font-family: var(--booz-source-sans); }
 
-.title {
+.title h1 {
   font-family: var(--booz-source-sans);
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 600;
   display: inline; }
 
 .head {
-  display: inline-block; }
+  display: inline-block;
+  margin: 2rem 1rem; }
   .head nav {
+    display: inline-block;
     position: absolute;
-    right: 1.5rem;
-    top: 1rem; }
+    right: 3rem; }
 
-#BAP {
+.BAP {
   color: black; }
 
-#Xchange {
+.Xchange {
   color: #005057; }
 
 .nav-home,
@@ -175,6 +176,16 @@ div.datalinks-right {
 .datalink-partners {
   background-color: #1d818c;
   border-bottom-color: #166770; }
+
+.question h2, .question input {
+  display: inline; }
+
+.question h2 {
+  font-size: 24px; }
+
+.question input {
+  position: absolute;
+  right: 1rem; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)

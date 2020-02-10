@@ -3,28 +3,29 @@ h1 {
     font-family: var(--booz-source-sans);
 }
 
-.title {
+.title h1 {
     font-family: var(--booz-source-sans);
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 600;
     display: inline;
 }
 
 .head {
     display: inline-block;
-
+    margin: 2rem 1rem;
     nav {
+        display: inline-block;
         position: absolute;
-        right: 1.5rem;
-        top: 1rem;
+        right: 3rem;
+        // top: 1rem;
     }
 }
 
-#BAP {
+.BAP {
     color: black;
 }
 
-#Xchange {
+.Xchange {
     color: #005057;
 }
 
@@ -135,4 +136,17 @@ div {
 .datalink-partners {
     background-color: #1d818c;
     border-bottom-color: #166770;
+}
+
+.question {
+    h2, input{
+        display: inline;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    input{
+        position: absolute;
+        right: 1rem;
+    }
 }
