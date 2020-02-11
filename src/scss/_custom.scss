@@ -119,9 +119,7 @@ div {
     //     display: block;
     // }
 
-    &.datalinks-left,
-    &.datalinks-middle,
-    &.datalinks-right {
+    &.trapezoid {
         border-bottom: 1rem solid;
         border-left: 1rem solid transparent;
         border-right: 1rem solid transparent;
@@ -161,11 +159,13 @@ div {
     bottom: 0;
     right: 15px;
     border: 3px solid #f1f1f1;
+    border-radius: 5px;
     z-index: 9;
     background-color: #066a73;
+    font-size: x-large;
 }
 
-.form-container input[type=text],
+.form-container input[type=email],
 .form-container input[type=password] {
     width: 100%;
     padding: 15px;
@@ -190,15 +190,21 @@ DATALINKS
 .datalinks-body {
     color: white;
     text-align: center;
-
+  
     h2 {
-        font-size: 40px;
+      font-size: 40px;
     }
-}
+  
+    > div {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
 .datalink-experts,
 .datalink-opportunities,
 .datalink-partners {
+    min-height: 193px;
     border-bottom: 2rem solid;
 }
 
@@ -240,8 +246,12 @@ FAQ
 
 }
 
-input.plus:not(:checked)~div.answer {
+input.plus {
     display: none;
+  
+    &:not(:checked) ~ div.answer {
+      display: none;
+    }
 }
 
 div.answer {
@@ -251,6 +261,52 @@ div.answer {
 p.qlist {
     margin: 0;
 }
+
+.checkbox-container {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-label {
+    cursor: pointer;
+}
+.css-checkbox {
+    display: none;
+}
+.fa {
+    color: white;
+    line-height: 16px;
+    border-radius: 4px;
+}
+.fa-plus {
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-color: #3AC5C9;
+}
+.fa-minus {
+    padding-top: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-color: #E85764;
+    display: none;
+}
+.css-checkbox:checked + .css-label .fa-minus {
+    display: inline;
+}
+.css-checkbox:checked + .css-label .fa-plus {
+    display: none;
+}
+
+
+
+/******** 
+
+Footer
+
+********/
 
 footer {
     background-color: black;

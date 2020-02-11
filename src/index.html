@@ -15,8 +15,6 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <script src="https://kit.fontawesome.com/39cb2525f4.js" crossorigin="anonymous"></script>
-  <script src="scripts.js"></script>
   <link rel="stylesheet" href="../src/css/main.css">
   <style>
   </style>
@@ -28,7 +26,7 @@
   <!-- Page Head -->
   <div class="container head" id="home">
     <span class="title">
-      <h1 class="BAP" id="BAP">Booz Allen Partner</h1> 
+      <h1 class="BAP" id="BAP">Booz Allen Partner</h1>
       <h1 class="rotator xchange" id="rotatingtitle">Xchange</h1>
       <!-- <h1 class="rotator network">Network</h1>
       <h1 class="rotator connections">Connections</h1>
@@ -40,7 +38,7 @@
       <h1 class="rotator alliances">Alliances</h1>
       <h1 class="rotator ecosystem">Ecosystem</h1> -->
     </span>
-    
+
     <nav class="navbar">
       <a class="nav-home" href="#home">Home</a> <span>&nbsp;|&nbsp;</span>
       <a class="nav-about" href="#about">About</a> <span>&nbsp;|&nbsp;</span>
@@ -74,7 +72,8 @@
             <div class="col-md-6">
               <h3>Partner Portal</h3>
               <p class="login-button">
-                <a class="btn btn-default" href="#" role="button" onclick="openForm()">Login <span class="login-arrow-right">→</span></a>
+                <a class="btn btn-default" href="#" role="button" onclick="openForm()">Login <span
+                    class="login-arrow-right">→</span></a>
               </p>
             </div>
           </div>
@@ -87,7 +86,8 @@
             <div class="col-md-6">
               <h3>Employee Portal</h3>
               <p class="login-button">
-                <a class="btn btn-default" href="#" role="button" onclick="openForm()">Login <span class="login-arrow-right">→</span></a>
+                <a class="btn btn-default" href="#" role="button" onclick="openForm()">Login <span
+                    class="login-arrow-right">→</span></a>
               </p>
             </div>
           </div>
@@ -96,11 +96,21 @@
       <div class="form-popup" id="loginForm">
         <form action="https://bpn.ratio.exchange/process.cfm" method="post" class="form-container">
           <table>
-           <tr><td>Email</td></tr>
-           <tr><td><input type="email" name="em"></td></tr>
-           <tr><td>Password</td></tr>
-           <tr><td><input type="password" name="pw"></td></tr>
-           <tr><td><input type="submit" name="button" required value="Sign In" onclick="closeForm()"></td></tr>
+            <tr>
+              <td>Email</td>
+            </tr>
+            <tr>
+              <td><input type="email" name="em"></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+            </tr>
+            <tr>
+              <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+              <td><input type="submit" name="button" required value="Sign In" onclick="closeForm()"></td>
+            </tr>
           </table>
         </form>
       </div>
@@ -112,34 +122,38 @@
   <!-- Page Description -->
   <div class="container" id="about">
     <p>The Booz Allen Partner Exchange (BPX) is a partnership ecosystem management and exchange tool. The BPX will
-    foster and strengthen Partner relationships; and it will serve as a connection point between Booz Allen
-    employees and Partners to collaborate, accelerate, and scale technology capabilities and solutions in the
-    marketplace for enhanced client delivery.</p>
+      foster and strengthen Partner relationships; and it will serve as a connection point between Booz Allen
+      employees and Partners to collaborate, accelerate, and scale technology capabilities and solutions in the
+      marketplace for enhanced client delivery.</p>
   </div>
 
   <!-- Datalinks -->
   <div class="container datalinks" id="activity">
     <h1>We do more. Together.</h1>
-    <div class="row datalinks-top">
-      <div class="col-md-4 datalinks-left"></div>
-      <div class="col-md-4 datalinks-middle"></div>
-      <div class="col-md-4 datalinks-right"></div>
-    </div>
     <div class="row datalinks-body">
-      <div class="col-md-4 datalink-experts">
-        <h2><i class="fas fa-chart-line"></i> 7,962</h2>
-        <h3>Experts</h3>
-        <p>with extensive knowledge and diverse expertise</p>
+      <div class="col-md-4">
+        <div class="datalinks-left trapezoid"></div>
+        <div class="datalink-experts">
+          <h2><i class="fas fa-chart-line"></i> 7,962</h2>
+          <h3>Experts</h3>
+          <p>with extensive knowledge and diverse expertise</p>
+        </div>
       </div>
-      <div class="col-md-4 datalink-opportunities">
-        <h2><i class="far fa-lightbulb"></i> 6,443</h2>
-        <h3>Opportunities</h3>
-        <p>to grow and expand your business</p>
+      <div class="col-md-4">
+        <div class="datalinks-middle trapezoid"></div>
+        <div class="datalink-opportunities">
+          <h2><i class="far fa-lightbulb"></i> 6,443</h2>
+          <h3>Opportunities</h3>
+          <p>to grow and expand your business</p>
+        </div>
       </div>
-      <div class="col-md-4 datalink-partners">
-        <h2><i class="fas fa-users"></i> 3,927</h2>
-        <h3>Partners</h3>
-        <p>for collaboration and dynamic client delivery</p>
+      <div class="col-md-4">
+        <div class="datalinks-right trapezoid"></div>
+        <div class="datalink-partners">
+          <h2><i class="fas fa-users"></i> 3,927</h2>
+          <h3>Partners</h3>
+          <p>for collaboration and dynamic client delivery</p>
+        </div>
       </div>
     </div>
   </div>
@@ -149,7 +163,17 @@
     <h1>Frequently Asked Questions</h1>
     <hr>
     <div class="question">
-      <h2>Why do we need the BPX?</h2> <input type="checkbox" class="plus">
+      <h2>Why do we need the BPX?</h2> 
+      <div class="checkbox-container">
+        <div class="plus-minus">
+          <input type="checkbox" name="faq1" class="css-checkbox">
+          <label for="a" class="css-label">
+            <span class="fa fa-plus"></span>
+            <span class="fa fa-minus"></span>
+          </label>
+        </div>
+      </div>
+      <!-- <input type="checkbox" name="faq1" class="plus"> -->
       <div class="answer">
         <p class="qlist">The BPX...</p>
         <ul>
@@ -163,42 +187,53 @@
     <div class="question">
       <h2>How does the BPX meet these needs?</h2> <input type="checkbox" class="plus">
       <div class="answer">
-        <p>The BPX functions as a database, search engine, and relationship manager to centralize information sharing and the Partner validation process.</p>
+        <p>The BPX functions as a database, search engine, and relationship manager to centralize information sharing
+          and the Partner validation process.</p>
       </div>
     </div>
     <hr>
     <div class="question">
       <h2>Is training available for new BPX users?</h2> <input type="checkbox" class="plus">
       <div class="answer">
-        <p>Yes! When registering as a new user, the intake process will conclude with a brief walkthrough tutorial that features navigation tips, key tools, and other features.  Additional learning opportunities are available in Degreed as a Learning Pathway.</p>
+        <p>Yes! When registering as a new user, the intake process will conclude with a brief walkthrough tutorial that
+          features navigation tips, key tools, and other features. Additional learning opportunities are available in
+          Degreed as a Learning Pathway.</p>
       </div>
     </div>
     <hr>
     <div class="question">
-      <h2>Can I invite a Booz Allen Partner I've worked with on a project in the past?</h2> <input type="checkbox" class="plus">
+      <h2>Can I invite a Booz Allen Partner I've worked with on a project in the past?</h2> <input type="checkbox"
+        class="plus">
       <div class="answer">
-        <p>Absolutely.  All Partner members will go through a standard intake process approved by Ethics, Legal, and Compliance.  The BPX is stronger and more efficient with an active base of both Booz Allen employees and In-Network Partners.</p>
+        <p>Absolutely. All Partner members will go through a standard intake process approved by Ethics, Legal, and
+          Compliance. The BPX is stronger and more efficient with an active base of both Booz Allen employees and
+          In-Network Partners.</p>
       </div>
     </div>
     <hr>
     <div class="question">
       <h2>Can I join more than one community in the BPX?</h2> <input type="checkbox" class="plus">
       <div class="answer">
-        <p>Yes. You can join as many communities as you wish.  Simply request to join and the community manager will approve your membership.</p>
+        <p>Yes. You can join as many communities as you wish. Simply request to join and the community manager will
+          approve your membership.</p>
       </div>
     </div>
     <hr>
     <div class="question">
-      <h2>What documents, agreements, and other legal definitions do I need to put in place as a Partner member?</h2> <input type="checkbox" class="plus">
+      <h2>What documents, agreements, and other legal definitions do I need to put in place as a Partner member?</h2>
+      <input type="checkbox" class="plus">
       <div class="answer">
-        <p>Part of the Partner intake process includes an NDA.  Once you are an approved In-Network Partner member, you will have access to teaming agreements, IP agreements, or additional NDAs as needed. </p>
+        <p>Part of the Partner intake process includes an NDA. Once you are an approved In-Network Partner member, you
+          will have access to teaming agreements, IP agreements, or additional NDAs as needed. </p>
       </div>
     </div>
     <hr>
     <div class="question">
       <h2>How are these relationships governed?</h2> <input type="checkbox" class="plus">
       <div class="answer">
-        <p>A major goal of the BPX is to streamline workflows to increase efficiencies.  Legal, Compliance, and Alliances teams and resources will be available to Booz Allen employees to help guide relationships, provide necessary documents and agreements, and answer questions.  The overall BPX is governed by an advisory board.</p>
+        <p>A major goal of the BPX is to streamline workflows to increase efficiencies. Legal, Compliance, and Alliances
+          teams and resources will be available to Booz Allen employees to help guide relationships, provide necessary
+          documents and agreements, and answer questions. The overall BPX is governed by an advisory board.</p>
       </div>
     </div>
   </div>
@@ -217,6 +252,9 @@
     <p>&copy; Booz Allen Hamilton 2020</p>
   </footer>
 
+  <script href="https://kit.fontawesome.com/39cb2525f4.js" crossorigin="anonymous"></script>
+
+  <script src="scripts.js"></script>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
