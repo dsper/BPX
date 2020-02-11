@@ -1,5 +1,5 @@
-h2,
-h1 {
+h1,
+h2 {
     font-family: var(--booz-source-sans);
 }
 
@@ -35,19 +35,6 @@ HEADING
     color: #005057;
 }
 
-// h1 {
-//     &.network,
-//     &.connections,
-//     &.marketplace,
-//     &.relationships,
-//     &.ventures,
-//     &.opportunities,
-//     &.solutions,
-//     &.alliances,
-//     &.ecosystem {
-//         display: none;
-//     }
-// }
 
 
 .nav-home,
@@ -76,14 +63,16 @@ JUMBOTRON
 
 
 .portal {
+    max-width: 300px;
+
     i {
         display: block;
         font-size: 80px;
-        margin: 10% 0;
+        margin: 13px 0;
     }
 
     h3 {
-        margin: 10% 0;
+        margin: 13px 0;
     }
 }
 
@@ -91,7 +80,7 @@ div {
     &.jumbotron {
         border: solid #066a73;
         border-width: 2rem 0;
-        background-image: url("/Users/josephmeehan/Documents/GitHub/BPX/images/woman-blue-jacket-crop.jpeg");
+        background-image: url("../../images/woman-blue-jacket-crop.jpeg");
         background-color: #066a73;
         background-size: auto 100%;
         background-repeat: no-repeat;
@@ -231,25 +220,21 @@ FAQ
 
 .question {
 
-    h2,
-    input {
-        display: inline;
-    }
-
     h2 {
+        display: inline;
         font-size: 24px;
     }
 
-    input {
-        float: right;
-    }
 
+    .fa {
+        font-size: x-large;
+    }
 }
 
 input.plus {
     display: none;
   
-    &:not(:checked) ~ div.answer {
+    &:not(:checked) + div.answer {
       display: none;
     }
 }
@@ -261,45 +246,37 @@ div.answer {
 p.qlist {
     margin: 0;
 }
-
 .checkbox-container {
     float: right;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+  
 .css-label {
     cursor: pointer;
 }
+  
 .css-checkbox {
     display: none;
 }
-.fa {
-    color: white;
-    line-height: 16px;
-    border-radius: 4px;
+  
+.fa-plus, .fa-minus {
+    color: #046870;
 }
-.fa-plus {
-    padding-top: 2px;
-    padding-right: 2px;
-    padding-left: 2px;
-    background-color: #3AC5C9;
-}
+  
 .fa-minus {
-    padding-top: 1px;
-    padding-right: 2px;
-    padding-left: 2px;
-    background-color: #E85764;
-    display: none;
-}
-.css-checkbox:checked + .css-label .fa-minus {
-    display: inline;
-}
-.css-checkbox:checked + .css-label .fa-plus {
     display: none;
 }
 
+.css-checkbox:checked + .css-label {
+    .fa-minus {
+        display: inline;
+    }
+    .fa-plus {
+        display: none;
+    }
+}
 
 
 /******** 
@@ -311,8 +288,25 @@ Footer
 footer {
     background-color: black;
     color: white;
+    padding: 5rem  0;
+
+    h1 {
+        display: inline-block;
+    }
 
     nav {
         float: right;
+    }
+
+    .disclaimer{
+        font-size: x-small;
+        width: 50%;
+    }
+    .nav-home,
+    .nav-about,
+    .nav-activity,
+    .nav-faq,
+    .nav-contact {
+        color: white;
     }
 }

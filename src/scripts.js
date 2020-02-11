@@ -27,3 +27,9 @@ function openForm() {
 function closeForm() {
     document.getElementById("loginForm").style.display = "none";
 }
+
+function shareCheck(id, check) {
+    newid=id.slice(0, 4) + "-answer";
+    // alert("ID: " + id + "\nChecked: " + check + "\nNew ID: " newid);
+    document.getElementById(newid).checked = check;
+}

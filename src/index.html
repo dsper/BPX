@@ -15,6 +15,13 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script src="https://kit.fontawesome.com/39cb2525f4.js" crossorigin="anonymous"></script>
+
+  <script src="scripts.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../src/css/main.css">
   <style>
   </style>
@@ -114,8 +121,6 @@
           </table>
         </form>
       </div>
-
-      <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
     </div>
   </div>
 
@@ -166,14 +171,14 @@
       <h2>Why do we need the BPX?</h2> 
       <div class="checkbox-container">
         <div class="plus-minus">
-          <input type="checkbox" name="faq1" class="css-checkbox">
-          <label for="a" class="css-label">
+          <input type="checkbox" id="faq1-icons" class="css-checkbox" oninput="shareCheck(this.id, this.checked)">
+          <label for="faq1-icons" class="css-label">
             <span class="fa fa-plus"></span>
             <span class="fa fa-minus"></span>
           </label>
         </div>
       </div>
-      <!-- <input type="checkbox" name="faq1" class="plus"> -->
+      <input type="checkbox" id="faq1-answer" class="plus">
       <div class="answer">
         <p class="qlist">The BPX...</p>
         <ul>
@@ -185,7 +190,17 @@
     </div>
     <hr>
     <div class="question">
-      <h2>How does the BPX meet these needs?</h2> <input type="checkbox" class="plus">
+      <h2>How does the BPX meet these needs?</h2> 
+      <div class="checkbox-container">
+        <div class="plus-minus">
+          <input type="checkbox" id="faq2-icons" class="css-checkbox" oninput="shareCheck(this.id, this.checked)">
+          <label for="faq2-icons" class="css-label">
+            <span class="fa fa-plus"></span>
+            <span class="fa fa-minus"></span>
+          </label>
+        </div>
+      </div>
+      <input type="checkbox" id="faq2-answer" class="plus">
       <div class="answer">
         <p>The BPX functions as a database, search engine, and relationship manager to centralize information sharing
           and the Partner validation process.</p>
@@ -193,7 +208,17 @@
     </div>
     <hr>
     <div class="question">
-      <h2>Is training available for new BPX users?</h2> <input type="checkbox" class="plus">
+      <h2>Is training available for new BPX users?</h2> 
+      <div class="checkbox-container">
+        <div class="plus-minus">
+          <input type="checkbox" id="faq3-icons" class="css-checkbox" oninput="shareCheck(this.id, this.checked)">
+          <label for="faq3-icons" class="css-label">
+            <span class="fa fa-plus"></span>
+            <span class="fa fa-minus"></span>
+          </label>
+        </div>
+      </div>
+      <input type="checkbox" id="faq3-answer" class="plus">
       <div class="answer">
         <p>Yes! When registering as a new user, the intake process will conclude with a brief walkthrough tutorial that
           features navigation tips, key tools, and other features. Additional learning opportunities are available in
@@ -202,8 +227,17 @@
     </div>
     <hr>
     <div class="question">
-      <h2>Can I invite a Booz Allen Partner I've worked with on a project in the past?</h2> <input type="checkbox"
-        class="plus">
+      <h2>Can I invite a Booz Allen Partner I've worked with on a project in the past?</h2>  
+      <div class="checkbox-container">
+        <div class="plus-minus">
+          <input type="checkbox" id="faq4-icons" class="css-checkbox" oninput="shareCheck(this.id, this.checked)">
+          <label for="faq4-icons" class="css-label">
+            <span class="fa fa-plus"></span>
+            <span class="fa fa-minus"></span>
+          </label>
+        </div>
+      </div>
+      <input type="checkbox" id="faq4-answer" class="plus">
       <div class="answer">
         <p>Absolutely. All Partner members will go through a standard intake process approved by Ethics, Legal, and
           Compliance. The BPX is stronger and more efficient with an active base of both Booz Allen employees and
@@ -212,7 +246,17 @@
     </div>
     <hr>
     <div class="question">
-      <h2>Can I join more than one community in the BPX?</h2> <input type="checkbox" class="plus">
+      <h2>Can I join more than one community in the BPX?</h2> 
+      <div class="checkbox-container">
+        <div class="plus-minus">
+          <input type="checkbox" id="faq5-icons" class="css-checkbox" oninput="shareCheck(this.id, this.checked)">
+          <label for="faq5-icons" class="css-label">
+            <span class="fa fa-plus"></span>
+            <span class="fa fa-minus"></span>
+          </label>
+        </div>
+      </div>
+      <input type="checkbox" id="faq5-answer" class="plus">
       <div class="answer">
         <p>Yes. You can join as many communities as you wish. Simply request to join and the community manager will
           approve your membership.</p>
@@ -221,7 +265,16 @@
     <hr>
     <div class="question">
       <h2>What documents, agreements, and other legal definitions do I need to put in place as a Partner member?</h2>
-      <input type="checkbox" class="plus">
+      <div class="checkbox-container">
+        <div class="plus-minus">
+          <input type="checkbox" id="faq6-icons" class="css-checkbox" oninput="shareCheck(this.id, this.checked)">
+          <label for="faq6-icons" class="css-label">
+            <span class="fa fa-plus"></span>
+            <span class="fa fa-minus"></span>
+          </label>
+        </div>
+      </div>
+      <input type="checkbox" id="faq6-answer" class="plus">
       <div class="answer">
         <p>Part of the Partner intake process includes an NDA. Once you are an approved In-Network Partner member, you
           will have access to teaming agreements, IP agreements, or additional NDAs as needed. </p>
@@ -229,7 +282,17 @@
     </div>
     <hr>
     <div class="question">
-      <h2>How are these relationships governed?</h2> <input type="checkbox" class="plus">
+      <h2>How are these relationships governed?</h2>  
+      <div class="checkbox-container">
+        <div class="plus-minus">
+          <input type="checkbox" id="faq7-icons" class="css-checkbox" oninput="shareCheck(this.id, this.checked)">
+          <label for="faq7-icons" class="css-label">
+            <span class="fa fa-plus"></span>
+            <span class="fa fa-minus"></span>
+          </label>
+        </div>
+      </div>
+      <input type="checkbox" id="faq7-answer" class="plus">
       <div class="answer">
         <p>A major goal of the BPX is to streamline workflows to increase efficiencies. Legal, Compliance, and Alliances
           teams and resources will be available to Booz Allen employees to help guide relationships, provide necessary
@@ -250,15 +313,9 @@
       <a class="nav-contact" href="#contact">Contact</a>
     </nav>
     <p>&copy; Booz Allen Hamilton 2020</p>
+    <p class="disclaimer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </footer>
 
-  <script href="https://kit.fontawesome.com/39cb2525f4.js" crossorigin="anonymous"></script>
-
-  <script src="scripts.js"></script>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be Booz Allen's site ID. -->
   <script>

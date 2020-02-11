@@ -69,8 +69,8 @@
   --monospace-font-weight-bold: 500;
   --booz-source-sans: "Source Sans Pro"; }
 
-h2,
-h1 {
+h1,
+h2 {
   font-family: var(--booz-source-sans); }
 
 /******** 
@@ -116,18 +116,19 @@ JUMBOTRON
 .FAQ h1 {
   text-align: center; }
 
-.portal i {
-  display: block;
-  font-size: 80px;
-  margin: 10% 0; }
-
-.portal h3 {
-  margin: 10% 0; }
+.portal {
+  max-width: 300px; }
+  .portal i {
+    display: block;
+    font-size: 80px;
+    margin: 13px 0; }
+  .portal h3 {
+    margin: 13px 0; }
 
 div.jumbotron {
   border: solid #066a73;
   border-width: 2rem 0;
-  background-image: url("/Users/josephmeehan/Documents/GitHub/BPX/images/woman-blue-jacket-crop.jpeg");
+  background-image: url("../../images/woman-blue-jacket-crop.jpeg");
   background-color: #066a73;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -234,19 +235,16 @@ DATALINKS
 FAQ
 
 ********/
-.question h2,
-.question input {
-  display: inline; }
-
 .question h2 {
+  display: inline;
   font-size: 24px; }
 
-.question input {
-  float: right; }
+.question .fa {
+  font-size: x-large; }
 
 input.plus {
   display: none; }
-  input.plus:not(:checked) ~ div.answer {
+  input.plus:not(:checked) + div.answer {
     display: none; }
 
 div.answer {
@@ -267,22 +265,10 @@ p.qlist {
 .css-checkbox {
   display: none; }
 
-.fa {
-  color: white;
-  line-height: 16px;
-  border-radius: 4px; }
-
-.fa-plus {
-  padding-top: 2px;
-  padding-right: 2px;
-  padding-left: 2px;
-  background-color: #3AC5C9; }
+.fa-plus, .fa-minus {
+  color: #046870; }
 
 .fa-minus {
-  padding-top: 1px;
-  padding-right: 2px;
-  padding-left: 2px;
-  background-color: #E85764;
   display: none; }
 
 .css-checkbox:checked + .css-label .fa-minus {
@@ -298,9 +284,21 @@ Footer
 ********/
 footer {
   background-color: black;
-  color: white; }
+  color: white;
+  padding: 5rem  0; }
+  footer h1 {
+    display: inline-block; }
   footer nav {
     float: right; }
+  footer .disclaimer {
+    font-size: x-small;
+    width: 50%; }
+  footer .nav-home,
+  footer .nav-about,
+  footer .nav-activity,
+  footer .nav-faq,
+  footer .nav-contact {
+    color: white; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
